@@ -92,6 +92,7 @@ header  nav  ul  li{
     padding: 0 40px;
 }
 
+/* ESTILO DO TOPO DO SITE */
 section.topo-do-site{
     padding: 40px 4%;
 }
@@ -148,7 +149,7 @@ section.topo-do-site .flex{
     }
 }
 
-/* ESTILOS DAS MINHAS SKILLS */
+/* ESTILOS DAS MINHAS HABILIDADES */
 
 section.skills{
     padding: 40px 4%;
