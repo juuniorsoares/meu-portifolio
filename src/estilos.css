@@ -1,0 +1,280 @@
+
+/* ESTILO GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.titulo1{
+    text-decoration: underline #00ff08;
+    color: #00ff08;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #00ff08;
+    text-align: center;
+    line-height: 55px;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #00ff08;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+/* ESTILO CABEÇALHO */
+
+header{
+    padding: 40px 4px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header  a{
+    display: inline-block;
+    transition: .2s;
+    color: #7d7d7d;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: #fff;
+    transform: scale(1.05);
+
+}
+
+header  nav  ul{
+    list-style: none;
+}
+
+header  nav  ul  li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: white;
+    font-size: 43px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #00ff08;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0px;
+    font-size: 20px;
+}
+
+.topo-do-site .container-foto .foto {
+    /* background-color: red; */
+    max-width: 450px;
+    border-radius: 50%;
+}
+
+.topo-do-site .container-foto img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+.topo-do-site .foto.sombra-interna {
+    background: #00ff08;
+}
+
+.topo-do-site .container-foto{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILOS DAS MINHAS SKILLS */
+
+section.skills{
+    padding: 40px 4%;
+}
+
+section.skills .flex{
+    gap: 60px;
+}
+
+.skills .skills-box{
+    color: #fff;
+    transition: .2s;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+}
+
+.skills .skills-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff67;
+}
+
+.skills .skills-box i{
+    font-size: 70px;
+    color: #00ff08;
+}
+
+.skills .skills-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILOS SOBRE  */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+.sobre .img-sobre img{
+    width: 400px;
+    height: 490px;
+    border-radius: 20px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 30px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .redes-sociais button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILOS MEUS PROJETOS */
+
+section.projetos{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-projeto{
+    width: 360px;
+    height: 470px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-projeto:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d1;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .4s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
