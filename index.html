@@ -26,10 +26,11 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#" target="_blank">inicio</a></li>
-                    <li><a href="#" target="_blank">sobre mim</a></li>
-                    <li><a href="#" target="_blank">projetos</a></li>
-                    <li><a href="#" target="_blank">skills</a></li>
+                    <li><a href="#topo-do-site">inicio</a></li>
+                    <li><a href="#sobre">sobre mim</a></li>
+                    <li><a href="#projetos">projetos</a></li>
+                    <li><a href="#skills">habilidades</a></li>
+                    <li><a href="#formulario">fale comigo</a></li>
                 </ul>
             </nav><!-- menu-desktop -->
 
@@ -50,11 +51,11 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">inicio</a></li>
-                        <li><a href="#">sobre mim</a></li>
-                        <li><a href="#">projetos</a></li>
-                        <li><a href="#">habilidades</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#topo-do-site">inicio</a></li>
+                        <li><a href="#sobre">sobre mim</a></li>
+                        <li><a href="#projetos">projetos</a></li>
+                        <li><a href="#skills">habilidades</a></li>
+                        <li><a href="#formulario">fale comigo</a></li>
                     </ul>
                 </nav>
 
@@ -66,12 +67,12 @@
     </header> <!-- header -->
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1>Olá! Sou Junior Soares
-                            seu novo Desenvolvedor web<span>.</span></h1>
+                            seu novo <span>Desenvolvedor web.<span></h1>
                         <p>Um desenvolvedor Front-End apaixonado pela tecnologia. Estou sempre me desafiando com novos
                             projetos e buscando feedback na comunidade de programação, além de
                             compartilhar meus conhecimentos.</p>
@@ -93,7 +94,7 @@
             </div> <!-- interface -->
         </section> <!-- topo-do-site -->
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>HABILIDADES.</span></h2> <!-- h2 -->
                 <div class="flex">
@@ -121,7 +122,7 @@
             </div> <!-- interface -->
         </section> <!-- skills -->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -160,7 +161,7 @@
             </div> <!-- interface -->
         </section> <!-- sobre -->
 
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <div class="interface">
                 <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
                 <div class="flex">
@@ -180,14 +181,14 @@
             </div> <!-- interface -->
         </section> <!-- projetos -->
 
-        <section class="formulario">
+        <section class="formulario" id="formulario">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu numero:">
+                <form action="src/documento.php" method="post">
+                    <input type="text" name="nome" id="" placeholder="Seu nome:" required>
+                    <input type="text" name="email" id=""  placeholder="Seu e-mail:" required>
+                    <input type="text" name="telefone" id="" placeholder="Seu numero:">
                     <textarea name="" id="" placeholder="Sua mensagem:"></textarea>
                     <div class="btn-enviar">
                         <input type="submit" value="ENVIAR">
@@ -197,7 +198,7 @@
         </section> <!-- formulario -->
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="interface">
             <div class="line-footer">
                 <div class="flex">
