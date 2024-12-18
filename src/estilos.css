@@ -522,6 +522,10 @@ footer .line-footer p a:hover {
         font-size: 22px;
     }
 
+    .txt-topo-site p {
+        text-align: justify;
+    }
+
     /* HABILIDADES */
 
     section.skills {
