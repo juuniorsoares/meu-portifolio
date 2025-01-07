@@ -43,3 +43,13 @@ h1 > span{
 .btn:hover{
     border-radius: 16px;
 }
+
+@media screen and (max-width: 1020px) {
+    .principal{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
