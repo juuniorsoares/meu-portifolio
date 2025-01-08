@@ -185,13 +185,13 @@
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
-                <form action="https://formsubmit.co/erivaldosoaresjunior@gmail.com" method="post">
+                <form action="https://formsubmit.co/erivaldosoaresjunior@gmail.com" method="post" data-form>
                     <input type="text" name="nome" id="" placeholder="Seu nome:" required>
                     <input type="text" name="email" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="telefone" id="" placeholder="Seu numero:">
+                    <input type="text" name="telefone" id="phone" maxlength="20" placeholder="Seu numero:">
                     <textarea name="" id="" placeholder="Sua mensagem:"></textarea>
                     <div class="btn-enviar">
-                        <input type="submit" value="ENVIAR">
+                        <input type="submit" data-button value="ENVIAR">
                     </div>
 
                     <input type="hidden" name="_subject" value="Novo Contato!">
@@ -240,6 +240,12 @@
     </footer>
 
     <script src="src/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+    <script>
+        $('#phone').mask('(00) 00000-0000');
+    </script>
 
 </body>
 
