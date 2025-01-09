@@ -126,7 +126,7 @@
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="src/imagens/minha-imagem.jpg" alt="">
+                        <img src="src/imagens/minha-imagem-perfil.jpg" alt="">
                     </div> <!-- img-sobre -->
 
                     <div class="txt-sobre">
@@ -185,19 +185,17 @@
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
-                <form action="https://formsubmit.co/erivaldosoaresjunior@gmail.com" method="post" data-form>
-                    <input type="text" name="nome" id="" placeholder="Seu nome:" required>
-                    <input type="text" name="email" id="" placeholder="Seu e-mail:" required>
+                <form id="form" action="https://formsubmit.co/erivaldosoaresjunior@gmail.com" method="post">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
+                    <input type="text" name="email" id="email" placeholder="Seu e-mail:" required>
                     <input type="text" name="telefone" id="phone" maxlength="20" placeholder="Seu numero:">
-                    <textarea name="" id="" placeholder="Sua mensagem:"></textarea>
-                    <div class="btn-enviar">
-                        <input type="submit" data-button value="ENVIAR">
-                    </div>
+                    <textarea name="mensagen" cols="30" rows="10" id="mensagem" placeholder="Sua mensagem:"></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
 
                     <input type="hidden" name="_subject" value="Novo Contato!">
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://127.0.0.1:5500/obrigado.html">
+                    <!-- <input type="hidden" name="_next" value="https://127.0.0.1:5500/obrigado.html"> -->
                 </form>
             </div> <!-- interface -->
         </section> <!-- formulario -->
