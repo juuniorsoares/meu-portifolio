@@ -402,6 +402,13 @@ form textarea {
     font-size: 18px;
 }
 
+form .span-required{
+    font-size: 15px;
+    margin: 2px 0 0 4px;
+    display: none;
+    color: #e63636;
+}
+
 form textarea {
     resize: none;
     max-height: 200px;
